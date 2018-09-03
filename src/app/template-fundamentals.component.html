@@ -1,0 +1,13 @@
+<h2>{{ tituloteste }}</h2>
+<div>
+  <p>{{ resultado }}</p>
+  <ul>
+    <li *ngFor='let resultado of resultados'>
+      {{ resultado.nome }}
+    </li>
+  </ul>
+</div>
+<button (click)="enviarDados($event)">Atualizar</button>
+<button (click)="receberDadoReplay()">Iniciar subscribe</button>
+<button (click)="excluirSubscribe()">Finalizar subscribe</button>
+
